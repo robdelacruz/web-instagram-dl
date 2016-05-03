@@ -6,7 +6,10 @@
 	width: 5em;
 }
 #target_contents {
-	height: 500px;
-	width: 500px;
+}
+#target_img {
+	display: block;
+	height: 300px;
+	width: 300px;
 }
 
