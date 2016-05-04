@@ -9,7 +9,7 @@
 	var $target_contents = $('#target_contents');
 
 	$btn_get.click(function() {
-		var src_url_val = $src_url.val();
+		var src_url_val = $.trim($src_url.val());
 		if (src_url_val == '') {
 			$target_contents.text('Source url needed');
 			return;
