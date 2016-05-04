@@ -8,16 +8,21 @@
 </head>
 <body>
 	<form>
-		<h1>Get Instagram Image</h1>
+		<h1>Access Instagram Image</h1>
 		<h2>Instagram Url:</h2>
 		<aside>Ex. https://www.instagram.com/p/BDqKUeWMOtQ</aside>
 		<input id="src_url">
 		<input id="btn_get" type="button" value="Get">
 		<input id="btn_clear" type="button" value="Clear">
 
-		<h2>Result:</h2>
-		<textarea id="target_contents" cols="80" rows="2" disabled></textarea>
-		<img id="target_img">
+		<div id="results">
+			<h2>Result:</h2>
+			<textarea id="target_contents" cols="80" rows="2" disabled></textarea>
+			<a id="download_action" href="">Download Image</a>
+			<div id="img_container">
+				<img id="target_img">
+			</div>
+		</div>
 	</form>
 
 	<script src="main.js"></script>
