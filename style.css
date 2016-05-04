@@ -12,4 +12,16 @@
 	height: 300px;
 	width: 300px;
 }
+form h2 {
+	margin: 0.3em 0;
+}
+form aside {
+	display: block;
+	margin: 0 0 0.3em;
+	font-style: italic;
+	font-size: smaller;
+}
+form input {
+	margin: 0.3em 0;
+}
 
