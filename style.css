@@ -1,0 +1,15 @@
+#src_url {
+	display: block;
+	width: 500px;
+}
+#btn_get {
+	width: 5em;
+}
+#target_contents {
+}
+#target_img {
+	display: block;
+	height: 300px;
+	width: 300px;
+}
+
