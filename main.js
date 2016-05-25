@@ -5,13 +5,16 @@
 	var $src_url = $("#src_url");
 	var $btn_get = $("#btn_get");
 	var $btn_clear = $("#btn_clear");
+	var $form = $("form");
 
 	var $results_container = $("#results");
 	var $target_img = $("#target_img");
 	var $target_contents = $('#target_contents');
 	var $download_action = $('#download_action');
 
-	$btn_get.click(function() {
+	$form.submit(function(event) {
+		event.preventDefault();
+
 		var src_url_val = $.trim($src_url.val());
 		if (src_url_val == '') {
 			$target_contents.text('Source url needed');
