@@ -16,6 +16,7 @@
 		event.preventDefault();
 
 		var src_url_val = $.trim($src_url.val());
+		src_url_val = strip_querystr_section(src_url_val);
 		if (src_url_val == '') {
 			$target_contents.text('Source url needed');
 			return;
@@ -71,6 +72,11 @@
 		$target_img.attr('src', '');
 		$download_action.css('display', 'none');
 	});
+
+	// Return url without the query string '?parm1=...&parm2=...' section
+	function strip_querystr_section(url) {
+		return url.split('\?')[0];
+	}
 
 	function extract_image_url(page_text) {
 		var regex = /<meta property="og:image" content="(.*?)" \/>/;
