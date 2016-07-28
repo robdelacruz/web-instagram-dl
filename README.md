@@ -14,5 +14,9 @@ Web Utility Page for downloading image file from instagram link.
 	Click Get button
 	Right-click Save As on the image to save the file.
  
+## Link
+
+[Live website link](http://robdelacruz.github.io/web-instagram-dl/)
+
 
 
